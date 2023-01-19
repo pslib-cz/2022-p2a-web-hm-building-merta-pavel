@@ -9,11 +9,23 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-    <header class="photobackround">
+    <header class="header">
+        <a href="#" class="logo">LR</a>
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a> </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <nav class="photobackround">
         <h1 class="title_nadpis"><strong>HM Building.cz s.r.o</strong></h1>
         <p class="title">liberecká stavební společnost</p>
-    </header>
+    </nav>
     <article>
         <header class="sluzby">
             <h1 class="sluzby_nadpis">Využijte škálu našich <span class="orange">služeb</span></h1>
@@ -54,15 +66,14 @@
             <a class="button">Zobrazit více</a>
         </section>
     </div>
-    <div>
         <section class="důvěra">
-            <p>Naše firma nabízí své služby ve stavebnictví od roku 2015.</p>
-            <p>Za kvalitu naší práce ručíme.</p>
+            <p class="dtext"><strong>Naše firma nabízí své služby ve stavebnictví od roku 2015.</strong></p>
+            <p class="dtext"><strong>Za kvalitu naší práce ručíme.</strong></p>
             <a class="button-second">Přesvědčit se</a>
         </section>
-        <section class="reference">
-            <h2>Rádi vám ukážeme naše reference</h2>
-            <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené
+        <section class="sluzby">
+            <h2 class="sluzby_nadpis">Rádi vám ukážeme naše <span class="orange">reference</span></h2>
+            <p class="sluzby_text">Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené
             letitými zkušenostmi ve stavebnictví</strong>. To, že <strong>obrátit se na právě nás je vhodná volba potvrdí
             naší klienti</strong>, na jejíž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou 
             se rozhodně nestydíme.</p>
@@ -71,7 +82,6 @@
                 </section>
                 <a class="button-second">Více referencí</a>
         </section>
-    </div>
     </article>
     <footer>
         <h2>Plácneme si pro Váš projekt?</h2>
