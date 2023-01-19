@@ -34,7 +34,7 @@
     display: block;
     text-align: left;
     padding: .7em;
-    color: var(--white);
+    color: white;
     text-decoration: underline;
 }
 
