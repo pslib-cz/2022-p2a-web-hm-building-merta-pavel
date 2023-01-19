@@ -8,6 +8,28 @@
     src: url(../fonts/Inter-Regular.ttf);
 }
 
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: orange;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: orange;
+        color: var(--gray);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+}
 .nav{
     width: 100%;
     height: 100%;
@@ -148,6 +170,42 @@
     zoom: 2em;
 }
 
+.obrazek{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 0;
+    padding-top: 2.5em;
+}
+
+.galerie{
+    font-family: "OpenSans";
+    text-align: center;
+    font-size: small;
+}
+
+.galerie_nadpis{
+    padding-top: 0;
+}
+
+.button-ref{
+    font-family: "Inter";
+    text-align: center;
+    padding: 2.5em;
+}
+
 .button-second{
-    display: block;
+    font-family: "Inter";
+}
+
+.footer_nadpis{
+    font-family: "OpenSans";
+}
+
+.footer_text{
+    font-family: "Inter";
+}
+
+.button-third{
+    font-family: "Inter";
 }
