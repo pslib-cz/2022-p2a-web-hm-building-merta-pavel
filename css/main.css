@@ -209,3 +209,8 @@
 .button-third{
     font-family: "Inter";
 }
+
+li::marker{
+    color: orange;
+    font-size: 1.5em;
+}
