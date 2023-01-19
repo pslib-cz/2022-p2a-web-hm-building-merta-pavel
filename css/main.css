@@ -38,3 +38,27 @@
     padding: 0.5em;
     font-size: 0.8em;
 }
+
+.stavby{
+    padding: 0.5em;
+}
+
+.photo{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 0px 0px 40px 0px;
+}
+
+.nadpis{
+    font-family: "OpenSans";
+}
+
+.text{
+    font-family: "Inter";
+}
+
+.button{
+    font-family: "Inter";
+}
