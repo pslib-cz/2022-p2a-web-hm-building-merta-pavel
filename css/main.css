@@ -61,4 +61,6 @@
 
 .button{
     font-family: "Inter";
+    box-sizing: border-box;
+    color: orange;
 }
