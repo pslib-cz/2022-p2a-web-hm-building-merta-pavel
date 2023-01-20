@@ -209,8 +209,8 @@
     text-decoration: none;
     border: 1px dashed orange;
     background-color: orange;
+    margin: 0;
     margin-left: 1em;
-    margin-top: 0.5em;
 }
 
 .button-ref{
@@ -224,8 +224,7 @@
     text-decoration: none;
     border: 1px dashed orange;
     background-color: orange;
-    margin-top: 2em;
-    margin-left: 8em;
+    margin: auto;
 }
 
 .footer_nadpis{
@@ -240,10 +239,6 @@
     color: white;
 }
 
-.button-third{
-    font-family: "Inter";
-}
-
 li::marker{
     color: orange;
     font-size: 1.5em;
@@ -253,6 +248,7 @@ li::marker{
     margin-top: 5em;
     padding: 2em 2em;
     background-color: orange;
+    text-align: center;
 }
 
 .button-third{
@@ -266,7 +262,7 @@ li::marker{
     text-decoration: none;
     border: 1px dashed white;
     background-color: white;
-    margin-left: 5.25em;
+    margin: auto;
     margin-top: 1.5em;
     padding: 1em 1.5em;
 }
