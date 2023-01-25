@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+.sluzby_stavba{
+    display: grid;
+    grid-template-areas: "b a"
+                         "d c";
+}
+
+.novostavby{
+    grid-area: a;
+}
+
+.prstavby{
+    grid-area: b;
+}
+
+.rekonstrukce{
+    grid-area: c;
+}
+
+.komunikace{
+    grid-area: d;
+}
+
+.up{
+    padding-bottom: 6em;
+}
+
+.nadpis{
+    font-size: 1.5em;
+}
+
+.sluzby{
+    text-align: center;
+}
