@@ -8,6 +8,23 @@
     src: url(../fonts/Inter-Regular.ttf);
 }
 
+.photobackround{
+    height: 60vh;
+}
+
+.title_nadpis{
+    font-size: 4.5em;
+    margin-bottom: .5em;
+}
+
+.title{
+    font-size: 2em;
+}
+
+.text_sluzby{
+    padding-bottom: 6em;
+}
+
 .sluzby_stavba{
     display: grid;
     grid-template-areas: "b a"
@@ -30,8 +47,41 @@
     grid-area: d;
 }
 
+.novostavby{
+    display: grid;
+    grid-template-areas: "1"
+                         "2";
+}
+
+.rekonstrukce{
+    display: grid;
+    grid-template-areas: "1"
+                         "2";
+}
+
 .up{
-    padding-bottom: 6em;
+    padding-top: 5em;
+}
+
+.down{
+    grid-area: 2;
+}
+
+.photo{
+    width: 575px;
+    height: 307px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0px 0px 40px 0px;
+}
+
+.button{
+    margin-top: 0.5em;
+    margin-bottom: 5em;
+}
+
+.text{
+    grid-area: 1;
 }
 
 .nadpis{
@@ -40,4 +90,26 @@
 
 .sluzby{
     text-align: center;
+}
+
+.obrazek{
+    width: 450px;
+    height: 280px;
+}
+
+.galerie{
+    display: grid;
+    grid-template-areas: "hasici pradelna plocha";
+}
+
+.hasici{
+    grid-area: hasici;
+}
+
+.pradelna{
+    grid-area: pradelna;
+}
+
+.plocha{
+    grid-area: plocha;
 }
