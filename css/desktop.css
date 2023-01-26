@@ -17,6 +17,12 @@
     margin-bottom: .5em;
 }
 
+.sluzby_text{
+    display: block;
+    padding: 2em 25em;
+    text-align: center;
+}
+
 .title{
     font-size: 1.5em;
 }
@@ -25,46 +31,40 @@
     padding-bottom: 6em;
 }
 
-.sluzby_stavba{
+.novostavby{
     display: grid;
-    grid-template-areas: "b a"
-                         "d c";
+    grid-template-areas: "a b";
 }
 
-.novostavby{
+.novostavby_text{
+    grid-area: b;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+}
+
+.novostavby_photo{
     grid-area: a;
+    padding-left: 2em;
+    padding-top: 2em;
 }
 
 .prstavby{
-    grid-area: b;
+    display: grid;
+    grid-template-areas: "d c";
 }
 
-.rekonstrukce{
-    grid-area: c;
-}
-
-.komunikace{
+.prstavby_text{
     grid-area: d;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
 }
 
-.novostavby{
-    display: grid;
-    grid-template-areas: "1"
-                         "2";
-}
-
-.rekonstrukce{
-    display: grid;
-    grid-template-areas: "1"
-                         "2";
-}
-
-.up{
-    padding-top: 5em;
-}
-
-.down{
-    grid-area: 2;
+.prstavby_photo{
+    grid-area: c;
+    padding-right: 2em;
+    padding-top: 2em;
 }
 
 .photo{
@@ -78,10 +78,6 @@
 .button{
     margin-top: 0.5em;
     margin-bottom: 5em;
-}
-
-.text{
-    grid-area: 1;
 }
 
 .nadpis{
