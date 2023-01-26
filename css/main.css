@@ -31,7 +31,7 @@
 .nav{
     width: 100%;
     height: auto;
-    background-color: orange;
+    background-color: #EB6C27;
     overflow: hidden;
 }
 .menu a{
@@ -117,7 +117,7 @@
 }
 
 .orange{
-    color: orange;
+    color: #EB6C27;
 }
 
 .sluzby_text{
@@ -151,14 +151,14 @@
 
 .button{
     font-family: "Inter";
-    color: orange;
+    color: #EB6C27;
     text-align: center;
     display: inline-block;
     font-size: 1.1em;
     font-weight: 400;
     padding: .4em 1.3em;
     text-decoration: none;
-    border: 1px dashed orange;
+    border: 1px dashed #EB6C27;
 }
 
 .důvěra{
@@ -207,8 +207,8 @@
     font-weight: 400;
     padding: .4em 1.3em;
     text-decoration: none;
-    border: 1px dashed orange;
-    background-color: orange;
+    border: 1px dashed #EB6C27;
+    background-color: #EB6C27;
     margin: 0;
     margin-left: 1em;
 }
@@ -222,8 +222,8 @@
     font-weight: 400;
     padding: .4em 1.3em;
     text-decoration: none;
-    border: 1px dashed orange;
-    background-color: orange;
+    border: 1px dashed #EB6C27;
+    background-color: #EB6C27;
     margin: auto;
 }
 
@@ -240,14 +240,14 @@
 }
 
 li::marker{
-    color: orange;
+    color: #EB6C27;
     font-size: 1.5em;
 }
 
 .footer{
     margin-top: 5em;
     padding: 2em 2em;
-    background-color: orange;
+    background-color: #EB6C27;
     text-align: center;
 }
 
@@ -255,7 +255,7 @@ li::marker{
     font-family: "Inter";
     text-align: center;
     display: inline-block;
-    color: orange;
+    color: #EB6C27;
     font-size: 1.1em;
     font-weight: 400;
     padding: .4em 1.3em;
