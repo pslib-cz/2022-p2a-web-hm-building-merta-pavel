@@ -14,6 +14,18 @@
     scroll-behavior: smooth;
 }
 
+h1{
+    font-family: "OpenSans";
+}
+
+h2{
+    font-family: "OpenSans";
+}
+
+p{
+    font-family: "Inter";
+}
+
 .header{
     top: 0;
     width: 100%;
@@ -131,24 +143,19 @@
     font-size: 1em;
 }
 
-.stavby{
+.stavby__obsah{
     padding: 0.5em;
 }
 
-.photo{
-    width: 100%;
-    height: auto;
+.sluzby__photo{
+    width: 100%;    
+    height: 8.5em;
     object-fit: cover;
-    display: block;
-    border-radius: 0px 0px 40px 0px;
-}
+    margin: 0;
+    padding: 0;
+    margin-top: 2.5em;
+    border-radius: 0px 0px 0px 40px;
 
-.nadpis{
-    font-family: "OpenSans";
-}
-
-.text{
-    font-family: "Inter";
 }
 
 .button{
@@ -160,6 +167,7 @@
     padding: .4em 1.3em;
     text-decoration: none;
     background-color: #EB6C27;
+    color: white;
 }
 
 .button--outlined{
@@ -168,7 +176,7 @@
     border: 1px dashed #EB6C27;
 }
 
-.důvěra{
+.presvedceni{
     font-family: "Inter";
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../photos/background-CTAblock-4460w.jpg);
     color: white;
@@ -178,16 +186,7 @@
     height: 25vh;
     zoom: 2em;
 }
-
-.dtext{
-    display: flex;
-    flex-direction: column;
-    padding-left: 1em;
-    padding-top: 1.5em;
-    justify-content: center;
-}
-
-.obrazek{
+.galerie__photo{
     width: 90%;
     height: auto;
     object-fit: cover;
@@ -195,43 +194,12 @@
     padding-top: 2.5em;
 }
 
-.galerie{
-    font-family: "OpenSans";
+.reference-container{
     text-align: center;
-    font-size: small;
 }
 
-.galerie_nadpis{
-    padding-top: 0;
-}
-
-.button-second{
-    font-family: "Inter";
+.button--center{
     text-align: center;
-    display: inline-block;
-    color: white;
-    font-size: 1.1em;
-    font-weight: 400;
-    padding: .4em 1.3em;
-    text-decoration: none;
-    border: 1px dashed #EB6C27;
-    background-color: #EB6C27;
-    margin: 0;
-    margin-left: 1em;
-}
-
-.button-ref{
-    font-family: "Inter";
-    text-align: center;
-    display: inline-block;
-    color: white;
-    font-size: 1.1em;
-    font-weight: 400;
-    padding: .4em 1.3em;
-    text-decoration: none;
-    border: 1px dashed #EB6C27;
-    background-color: #EB6C27;
-    margin: auto;
 }
 
 .footer_nadpis{
@@ -251,25 +219,16 @@ li::marker{
     font-size: 1.5em;
 }
 
-.footer{
+footer{
     margin-top: 5em;
     padding: 2em 2em;
     background-color: #EB6C27;
     text-align: center;
+    color: white;
 }
 
-.button-third{
-    font-family: "Inter";
-    text-align: center;
-    display: inline-block;
+.button--white{
     color: #EB6C27;
-    font-size: 1.1em;
-    font-weight: 400;
-    padding: .4em 1.3em;
-    text-decoration: none;
     border: 1px dashed white;
     background-color: white;
-    margin: auto;
-    margin-top: 1.5em;
-    padding: 1em 1.5em;
 }
