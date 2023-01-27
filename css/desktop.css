@@ -1,33 +1,23 @@
-@font-face {
-    font-family: "OpenSans";
-    src: url(../fonts/OpenSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url(../fonts/Inter-Regular.ttf);
-}
-
-.photobackround{
+.div-secondary{
     height: 60vh;
 }
 
-.title_nadpis{
+.div-secondary__h1{
     font-size: 4.5em;
     margin-bottom: .5em;
 }
 
-.sluzby_nadpis{
+.header__description{
     text-align: center;
 }
 
-.sluzby_text{
+.header__body{
     display: block;
     padding: 2em 25em;
     text-align: center;
 }
 
-.title{
+.p{
     font-size: 1.5em;
 }
 

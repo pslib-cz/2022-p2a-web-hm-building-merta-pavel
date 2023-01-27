@@ -99,7 +99,7 @@
     top:0;
 }
 
-.photobackround{
+.header__text{
     font-family: "OpenSans";
     text-align: center;
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../photos/pageheader-1920w.jpg);
@@ -114,7 +114,7 @@
     color: white;
 }
 
-.sluzby_nadpis{
+.header__description{
     font-family: "OpenSans";
 }
 
@@ -122,11 +122,11 @@
     color: #EB6C27;
 }
 
-.sluzby_text{
+.header__body{
     font-family: "Inter";
 }
 
-.sluzby{
+.header-secondary{
     padding: 0.5em;
     font-size: 1em;
 }
@@ -153,13 +153,18 @@
 
 .button{
     font-family: "Inter";
-    color: #EB6C27;
     text-align: center;
     display: inline-block;
     font-size: 1.1em;
     font-weight: 400;
     padding: .4em 1.3em;
     text-decoration: none;
+    background-color: #EB6C27;
+}
+
+.button--outlined{
+    color: #EB6C27;
+    background-color: white;
     border: 1px dashed #EB6C27;
 }
 
