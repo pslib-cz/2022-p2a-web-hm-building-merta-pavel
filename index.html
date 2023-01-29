@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1150px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1281px)">
+    <link rel="icon" href="./photos/logo.png">
     <title>Hlavní stránka</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-        <a href="#" class="logo"><img class="nlogo" src="./photos/logo.png"></img></a>
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-            <menu class="menu">
-                <li class="sluzby_text"><a href="./index.html">DOMŮ</a></li>
-                <li class="sluzby_text"><a href="./index.html#sluzbycky">SLUŽBY</a></li>
-                <li class="sluzby_text"><a href="./html/reference.html">REFERENCE</a> </li>
-                <li class="sluzby_text"><a href="./html/onás.html">O NÁS</a></li>
-                <li class="sluzby_text"><a href="#">KONTAKT</a></li>
-            </menu>
-        </nav>
+    <nav class="navbar">
+        <a href="./index.html" class="navbar__logo"><img src="./photos/logo.png" alt="logo" width="130px"></a>
+        <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+          <li class="nav-item">
+            <a class="nav-link" href="#section_1">DOMŮ</a>
+            <a class="nav-link" href="#section_2">DOMŮ</a>
+            <a class="nav-link" href="#section_3">DOMŮ</a>
+            <a class="nav-link" href="#section_4">DOMŮ</a>
+          </li>
+        </menu>
+        <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+      </nav>
+      <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        for (const btn of hamburgerButtons) {
+          btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+              menu.classList.toggle("navbar__menu--hidden");
+            }
+          }
+        }
+      </script>
     <div class="header__text">
         <h1 class="header__heading"><strong>HM Building.cz s.r.o</strong> <br> <span class="header__subheading">liberecká stavební společnost</span></h1>
     </div>
@@ -32,51 +43,53 @@
             <p>Ačkoliv provádíme především <strong>průmyslové stavby</strong>, není pro nás problém postavit Vám <strong>rodinný 
             domek na klíč</strong>, nebo jen hrubou stavbu. Nejsou nám cizí ani <strong>rekonstrukce budov</strong> a jejich 
             údržba a to včetně okolních ploch.</p>
-        <article class="sluzba">
-            <div class="stavby__obsah">
-                <img class="sluzby__photo photo-vlevo" src="./photos/sluzba-novostavby-1200w.jpg"></img>
-                <h2>Novostavby</h3>
-                <p>Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu na klíč</strong>, případně zhotovit ucelenou část.
-                Jsme schopni zajistit také projektovou dokumentaci.</p>
-                <p> Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
-                <a href="./html/novostavby.html" class="button button--outlined">Zobrazit více</a>
-            </div>
-        </article>
-        <article class="sluzba">
-            <div class="stavby__obsah">
-                <img class="sluzby__photo photo-vpravo" src="./photos/sluzba-prumyslove-stavby-1920w.jpg"></img>
-                <h2>Průmyslové stavby</h3>
-                <p>Realizujeme <strong>průmyslové objekty ocelové konstrukce</strong>, lehké ocelové (stanoveného typu), z prefabrikovaných 
-                dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách
-                a tím se <strong>dostáváme na přijatelné ceny.</strong></p>
-                <a href="./html/novostavby.html" class="button button--outlined">Zobrazit více</a>
-            </div>
-        </article>
-        <article class="sluzba">
-            <div class="stavby__obsah">
-                <img class="sluzby__photo photo-vlevo" src="./photos/sluzba-rekonstrukce-1920w.jpg"></img>
-                <h2>Rekonstrukce domů a jiných stavební</h3>
-                <p>Provádíme veškeré práce spojené s <strong>rekonstrukcí stávajících objektů</strong>. Pro naše klienty zajišťujeme
-                dodatečné izolování objektů, <strong>zateplení objektů</strong>, změnu vnitřních i vnějších dispozic stávajících objektů
-                a demolice stávajících staveb.</p>
-                <a href="./html/novostavby.html" class="button button--outlined">Zobrazit více</a>
-            </div>
-        </article>
-        <article class="sluzba">
-            <div class="stavby__obsah">
-                <img class="sluzby__photo photo-vpravo" src="./photos/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg"></img>
-                <h2>Komunikace a zpevněné plochy</h3>
-                <p>Komunikace a zpevněné plochy provádíme včetně <strong>zemních prací</strong>, <strong>konstrukcí podkladních</strong>
-                a souvisejících objektů, jako jsou <strong>odvodnění</strong>, <strong>zpevnění svahů</strong>, <strong>opěrné zdi</strong>
-                atd.</p>
-                <a href="./html/novostavby.html" class="button button--outlined">Zobrazit více</a>
-            </div>
-        </article>
-    </section>
+        </section>
+        <section class="sluzby-container">
+            <article class="sluzba">
+                <div class="sluzby__obsah">
+                    <img class="sluzby__photo photo-vlevo" src="./photos/sluzba-novostavby-1200w.jpg"></img>
+                    <h2>Novostavby</h3>
+                    <p>Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu na klíč</strong>, případně zhotovit ucelenou část.
+                    Jsme schopni zajistit také projektovou dokumentaci.</p>
+                    <p> Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
+                    <a href="./html/novostavby.html" class="button button--outlined">Zobrazit více</a>
+                </div>
+            </article>
+            <article class="sluzba">
+                <div class="sluzby__obsah">
+                    <img class="sluzby__photo photo-vpravo" src="./photos/sluzba-prumyslove-stavby-1920w.jpg"></img>
+                    <h2>Průmyslové stavby</h3>
+                    <p>Realizujeme <strong>průmyslové objekty ocelové konstrukce</strong>, lehké ocelové (stanoveného typu), z prefabrikovaných 
+                    dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách
+                    a tím se <strong>dostáváme na přijatelné ceny.</strong></p>
+                    <a href="./html/novostavby.html" class="button button--outlined">Zobrazit více</a>
+                </div>
+            </article>
+            <article class="sluzba">
+                <div class="sluzby__obsah">
+                    <img class="sluzby__photo photo-vlevo" src="./photos/sluzba-rekonstrukce-1920w.jpg"></img>
+                    <h2>Rekonstrukce domů a jiných stavební</h3>
+                    <p>Provádíme veškeré práce spojené s <strong>rekonstrukcí stávajících objektů</strong>. Pro naše klienty zajišťujeme
+                    dodatečné izolování objektů, <strong>zateplení objektů</strong>, změnu vnitřních i vnějších dispozic stávajících objektů
+                    a demolice stávajících staveb.</p>
+                    <a href="./html/novostavby.html" class="button button--outlined">Zobrazit více</a>
+                </div>
+            </article>
+            <article class="sluzba">
+                <div class="sluzby__obsah">
+                    <img class="sluzby__photo photo-vpravo" src="./photos/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg"></img>
+                    <h2>Komunikace a zpevněné plochy</h3>
+                    <p>Komunikace a zpevněné plochy provádíme včetně <strong>zemních prací</strong>, <strong>konstrukcí podkladních</strong>
+                    a souvisejících objektů, jako jsou <strong>odvodnění</strong>, <strong>zpevnění svahů</strong>, <strong>opěrné zdi</strong>
+                    atd.</p>
+                    <a href="./html/novostavby.html" class="button button--outlined">Zobrazit více</a>
+                </div>
+            </article>
+        </section>
         <section class="presvedceni">
             <h2>Naše firma nabízí své služby ve stavebnictví od roku 2015.</h2>
             <h2>Za kvalitu naší práce ručíme.</h2>
-            <a class="button">Přesvědčit se</a>
+            <a class="button button--left">Přesvědčit se</a>
         </section>
         <section class="reference">
             <article class="reference__info">

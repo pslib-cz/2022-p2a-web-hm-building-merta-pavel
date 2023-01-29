@@ -26,89 +26,25 @@ p{
     font-family: "Inter";
 }
 
-.header{
-    top: 0;
-    width: 100%;
-}
-
-.logo{
-    display: inline-block;
-    color: var(--white);
-    font-size: 60px;
-    margin-left: 10px;
-}
-
-.nlogo{
-    height: 40px;
-}
-
-.nav{
-    width: 100%;
-    height: auto;
-    background-color: #EB6C27;
-    overflow: hidden;
-}
-.menu a{
-    display: block;
-    text-align: left;
-    padding: .7em;
-    color: white;
-    text-decoration: underline;
-}
-
-.nav{
-    max-height: 0;
-    transition: max-height .5s ease-out;
-}
-
-.hamb{
-    cursor: pointer;
-    float: right;
-    padding: 35px 20px;
-}
-
-.hamb-line {
-    background: black;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
-}
-
-.hamb-line::before,
-.hamb-line::after{
-    background: black;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-.hamb-line::before{
-    top: 5px;
-}
-.hamb-line::after{
-    top: -5px;
-}
-
-.side-menu {
+.hamburger-menu {
+    color: inherit;
     display: none;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.75em;
 }
-
-.side-menu:checked ~ nav{
-    max-height: 100%;
+.hamburger-menu::after {
+    content: url(../hamburger.svg);
 }
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
+@media (max-width: 768px) {
+  .navbar__menu--hidden {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+    }
 }
 
 .header__text{
@@ -143,7 +79,11 @@ p{
     font-size: 1em;
 }
 
-.stavby__obsah{
+.sluzby__obsah{
+    padding: 0.5em;
+}
+
+.sluzba-container{
     padding: 0.5em;
 }
 
@@ -168,6 +108,7 @@ p{
     text-decoration: none;
     background-color: #EB6C27;
     color: white;
+    margin-top: 2em;
 }
 
 .button--outlined{
@@ -186,6 +127,17 @@ p{
     height: 25vh;
     zoom: 2em;
 }
+
+.presvedceni h2{
+    padding-top: 0.75em;
+    padding-left: 0.5em;
+    margin: auto;
+}
+
+.button--left{
+    margin-left: 0.5em;
+}
+
 .galerie__photo{
     width: 90%;
     height: auto;
@@ -194,8 +146,21 @@ p{
     padding-top: 2.5em;
 }
 
+.reference__info{
+    padding: 0.5em;
+}
+
 .reference-container{
     text-align: center;
+}
+
+.reference-container h2{
+    margin: 0.6em 0 0 0;
+}
+
+.reference-container p{
+    font-size: 12px;
+    margin-top: 2em;
 }
 
 .button--center{

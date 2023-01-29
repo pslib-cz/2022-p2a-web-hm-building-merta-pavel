@@ -1,112 +1,11 @@
-.div-secondary{
-    height: 60vh;
+.header__text{
+    height: 100vh;
 }
 
-.div-secondary__h1{
-    font-size: 4.5em;
-    margin-bottom: .5em;
-}
-
-.header__description{
+.sluzba-container h1{
     text-align: center;
 }
 
-.header__body{
-    display: block;
-    padding: 2em 25em;
+.sluzba-container p{
     text-align: center;
-}
-
-.p{
-    font-size: 1.5em;
-}
-
-.text_sluzby{
-    padding-bottom: 6em;
-}
-
-.novostavby{
-    display: grid;
-    grid-template-areas: "a b";
-}
-
-.novostavby_text{
-    grid-area: b;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 2em;
-}
-
-.novostavby_photo{
-    grid-area: a;
-    padding-left: 2em;
-    padding-top: 2em;
-}
-
-.prstavby{
-    display: grid;
-    grid-template-areas: "d c";
-}
-
-.prstavby_text{
-    grid-area: d;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 2em;
-}
-
-.prstavby_photo{
-    grid-area: c;
-    margin-right: 2em;
-    padding-top: 2em;
-}
-
-.photo{
-    width: 575px;
-    height: 307px;
-    object-fit: cover;
-    display: block;
-    border-radius: 0px 0px 40px 0px;
-}
-
-.button{
-    margin-top: 0.5em;
-    margin-bottom: 5em;
-}
-
-.nadpis{
-    font-size: 1.5em;
-}
-
-.sluzby{
-    text-align: center;
-}
-
-.obrazek{
-    width: 450px;
-    height: 280px;
-}
-
-.galerie_obrazky{
-    display: grid;
-    grid-template-areas: "hasici pradelna plocha";
-}
-
-.hasici{
-    grid-area: hasici;
-}
-
-.pradelna{
-    grid-area: pradelna;
-}
-
-.plocha{
-    grid-area: plocha;
-}
-
-.button-ref{
-    padding: 0.75em;
-    padding-left: 2em;
-    padding-right: 2em;
-    margin-top: 5em;
 }
