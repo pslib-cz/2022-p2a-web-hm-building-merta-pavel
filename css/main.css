@@ -38,20 +38,20 @@ li{
     height: 5em;
     width: 100%;    
     z-index: 50;
-    background-color: var(--bg-color);
+    background-color: white;
     margin-bottom: 0;
 }
 
 
 .navbar__logo{
     display: inline-block;
-    color: var(--white-color);
+    color: white;
     font-size: 60px;
 }
 .navbar__menu {
     width: 90%;
     position: absolute;
-    background-color: var(--main-color);
+    background-color: #EB6C27;
     overflow: hidden;
     max-height: 0;
     z-index: 100;
@@ -64,7 +64,7 @@ li{
     font-size: 1em;
     padding: .8em;
     padding-left:0;
-    color: var(--bg-color);
+    color: white;
     text-decoration: underline;
 
 }
