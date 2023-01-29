@@ -34,26 +34,101 @@ li{
     font-family: "Inter";
 }
 
-.hamburger-menu {
-    color: inherit;
+.navbar{
+    height: 5em;
+    width: 100%;    
+    z-index: 50;
+    background-color: var(--bg-color);
+    margin-bottom: 0;
+}
+
+
+.navbar__logo{
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 60px;
+}
+.navbar__menu {
+    width: 90%;
+    position: absolute;
+    background-color: var(--main-color);
+    overflow: hidden;
+    max-height: 0;
+    z-index: 100;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.navbar__menu a{
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    padding: .8em;
+    padding-left:0;
+    color: var(--bg-color);
+    text-decoration: underline;
+
+}
+
+.navbar__menu li{
+    list-style-type: none;
+}
+
+.menu-text{
+    font-size: 0.75rem;
+    position: absolute;
+    top: 0em;
+    right: 2em;
+}
+
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 2.5em 1.25em;
+}
+.hamb-line {
+    background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
+    display: block;
+    height:  0.5em;
+    position: relative;
+    width: 2.8em;
+}
+.hamb-line::before,
+.hamb-line::after{
+    background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width:  100%;
+}
+
+
+.hamb-line::before{
+    top: 0.7em;
+}
+.hamb-line::after{
+    top: -0.7em;
+}
+.burger-menu {
     display: none;
-    flex-direction: column;
-    align-items: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 0.75em;
 }
-.hamburger-menu::after {
-    content: url(../hamburger.svg);
+
+.burger-menu:checked ~ menu{
+    max-height: fit-content;
 }
-@media (max-width: 768px) {
-  .navbar__menu--hidden {
-    display: none;
-  }
-  .hamburger-menu {
-    display: flex;
-    }
+.burger-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
 }
+.burger-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.burger-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
 
 .header__text{
     font-family: "OpenSans";
@@ -64,6 +139,7 @@ li{
     background-size: cover;
     background-position: center;
     height: 35vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

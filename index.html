@@ -13,27 +13,31 @@
 <body>
     <nav class="navbar">
         <a href="./index.html" class="navbar__logo"><img src="./photos/logo.png" alt="logo" width="130px"></a>
-        <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-          <li class="nav-item">
-            <a class="nav-link" href="#section_1">DOMŮ</a>
-            <a class="nav-link" href="#section_2">DOMŮ</a>
-            <a class="nav-link" href="#section_3">DOMŮ</a>
-            <a class="nav-link" href="#section_4">DOMŮ</a>
-          </li>
+        <input class="burger-menu" type="checkbox" id="burger-menu"/>
+        <p class="menu-text">MENU</p>
+        <label class="hamb" for="burger-menu"><span class="hamb-line"></span></label>
+    <menu class="navbar__menu">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">DOMŮ</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html#services">SLUŽBY</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./html/reference.html">REFERENCE</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./html/onás.html">O NÁS</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./html/kontakt.html">KONTAKT</a>
+            </li>       
         </menu>
-        <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
-      </nav>
-      <script>
-        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-        for (const btn of hamburgerButtons) {
-          btn.onclick = (event) => {
-            const menus = document.querySelectorAll(".hamburger-menu-list");
-            for (const menu of menus) {
-              menu.classList.toggle("navbar__menu--hidden");
-            }
-          }
-        }
-      </script>
+    </nav>
     <div class="header__text">
         <h1 class="header__heading"><strong>HM Building.cz s.r.o</strong> <br> <span class="header__subheading">liberecká stavební společnost</span></h1>
     </div>
