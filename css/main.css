@@ -300,6 +300,10 @@ footer{
     padding: 0.5em;
 }
 
+.reference-section p{
+    padding-bottom: 1.5em;
+}
+
 .reference__photo{
     width: 90%;
     height: auto;
