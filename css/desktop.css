@@ -9,3 +9,13 @@
 .sluzba-container p{
     text-align: center;
 }
+
+.sluzby__photo{
+    width: 729px;
+    height: 307px;
+}
+
+.sluzby__obsah{
+    display: flex;
+    flex-direction: row;
+}

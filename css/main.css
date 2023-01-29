@@ -22,7 +22,15 @@ h2{
     font-family: "OpenSans";
 }
 
+h3{
+    font-family: "OpenSans";
+}
+
 p{
+    font-family: "Inter";
+}
+
+li{
     font-family: "Inter";
 }
 
@@ -196,4 +204,8 @@ footer{
     color: #EB6C27;
     border: 1px dashed white;
     background-color: white;
+}
+
+.sluzby-section{
+    padding: 0.5em;
 }
