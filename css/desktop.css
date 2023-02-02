@@ -42,8 +42,26 @@
 
 .reference__info{
     text-align: center;
+    padding-bottom: 4em;
 }
 
 .sluzba-container{
     text-align: center;
+}
+
+.presvedceni{
+    width: 1920px;
+    height: 458.89px;
+    left: 0px;
+    top: 0px;
+}
+
+.presvedceni h2{
+    padding-top: 5em;
+    padding-left: 5em;
+}
+
+.button--left{
+    margin-left: 7em;
+    padding: 1em 2em;
 }
