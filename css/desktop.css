@@ -14,13 +14,18 @@
 }
 
 .sluzby__obsah{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 6.25em;
 }
 
 .refrence__galerie {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.reference__photo{
+    width: 10%;
 }
 
 .button--center{
@@ -30,6 +35,18 @@
 .sluzby-section h1{
     text-align: center;
     padding-bottom: 1em;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.sluzby-section h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.sluzby-section li{
+    padding-left: 2em;
 }
 
 .seznam-onas{
@@ -45,12 +62,17 @@
     padding-bottom: 4em;
 }
 
+.reference__info h2{
+    font-weight: 700;
+    font-size: 60px;
+}
+
 .sluzba-container{
     text-align: center;
 }
 
 .presvedceni{
-    width: 1920px;
+    width: 1800;
     height: 458.89px;
     left: 0px;
     top: 0px;

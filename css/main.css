@@ -250,6 +250,14 @@ a{
     margin-bottom: 0.5em;
 }
 
+.galerie__photo{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 0;
+    padding-top: 2.5em;
+}
+
 .reference__info{
     padding: 0.5em;
 }
