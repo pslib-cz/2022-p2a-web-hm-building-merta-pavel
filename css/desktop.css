@@ -20,11 +20,24 @@
     flex-direction: row;
 }
 
-.reference-container{
-    display: flex;
-    flex-direction: row;
+.refrence__galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.button--center{
+    text-align: center;
 }
 
 .sluzby-section h1{
     text-align: center;
+    padding-bottom: 1em;
+}
+
+.seznam-onas{
+    padding: 1em 5em;
+}
+
+.sluzby-section{
+    padding: 1em 5em;
 }
