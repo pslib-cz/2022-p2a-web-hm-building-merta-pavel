@@ -326,6 +326,10 @@ footer{
     padding-bottom: 0;
 }
 
+.kontakt_content{
+    padding: 0.5em;
+}
+
 .icon{
     padding-bottom: 1em;
     padding-top: 1em;
@@ -373,6 +377,7 @@ footer{
 
 .map{
     display: block;
-    height: auto;
-    max-height: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
