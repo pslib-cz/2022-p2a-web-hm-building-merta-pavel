@@ -3,11 +3,9 @@
 }
 
 .sluzba-container h1{
-    text-align: center;
-}
-
-.sluzba-container p{
-    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 82px;
 }
 
 .sluzby__photo{
