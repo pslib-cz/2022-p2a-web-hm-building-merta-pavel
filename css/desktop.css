@@ -1,3 +1,33 @@
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+    position: absolute;
+    height: 90px;
+    transform: translate(-50%);
+    left: 50%;
+    top: 43px;
+    width: 90%;
+    max-width: 1510px;
+    background-color: white;
+}
+
+.nav{
+    background-color: white;
+    transform: unset;
+    width: fit-content;
+    position: unset;
+    overflow: visible;
+    display: flex;
+    margin-top: 1Opx;
+}
+
+.seznam{
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+}
+
 .header__text{
     height: 100vh;
 }

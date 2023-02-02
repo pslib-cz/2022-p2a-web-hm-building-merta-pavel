@@ -89,6 +89,21 @@ a{
     right: 2em;
 }
 
+.navbar__menu::before{
+
+    content: "";
+    border-bottom: var(--main-color) solid 30px;
+    border-left: solid transparent 20px;
+    border-right: solid transparent 20px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 1%;
+    margin-top: -20px;
+    
+
+}
+
 .hamb{
     cursor: pointer;
     float: right;
