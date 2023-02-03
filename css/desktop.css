@@ -87,3 +87,30 @@
     margin-left: 7em;
     padding: 1em 2em;
 }
+
+.reference-section h2{
+    text-align: center;
+}
+
+.reference-section p{
+    text-align: center;
+}
+
+.reference__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.gallery__img{
+    width: 450px;
+    height: 270px;
+}
+
+.photo__grid--stairs{
+    grid-row-start: span 3;
+}
+
+.reference-section--text{
+    grid-column: 1 / 4;
+}
