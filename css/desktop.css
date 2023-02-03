@@ -8,15 +8,39 @@
     line-height: 82px;
 }
 
+.sluzby__text p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
 .sluzby__photo{
-    width: 729px;
+    width: 600px;
     height: 307px;
 }
 
 .sluzby__obsah{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 6.25em;
+    grid-template-areas: "a b";
+}
+
+.photo-vlevo{
+    grid-area: a;
+    margin: 2em;
+}
+
+.sluzby__text--vpravo{
+    grid-area: b;
+    padding: 2em;
+}
+
+.photo-vpravo{
+    grid-area: b;
+    margin: 2em;
+}
+
+.sluzby__text--vlevo{
+    grid-area: a;
+    padding: 2em;
 }
 
 .refrence__galerie {
@@ -120,4 +144,18 @@
 
 .reference-section--text{
     grid-column: 1 / 4;
+}
+
+footer h2{
+    font-weight: 700;
+    font-size: 60px;
+}
+
+footer p{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.button--white{
+    padding: 0.75em 2.5em;
 }
