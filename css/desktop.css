@@ -177,10 +177,8 @@ footer p{
     padding-bottom: 5em;
 }
 
-.map{
-    width: 500px;
-    height: 225px;
-    padding-left: 6em;
+.kontakt__map{
+    width: auto;
 }
 
 .kontakt__item{
@@ -194,4 +192,85 @@ footer p{
 
 .center__button{
     text-align: center;
+}
+
+.hamb {
+    display: none;
+}
+.burger-menu {
+    display: none;
+}
+.navbar {
+    position: absolute;
+    top: 30px;
+    width: 90%;
+    background-color: white;
+    left: 50%;
+    transform: translate(-50%);
+}
+.navbar__menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    max-height: none;
+    background-color: transparent;
+    width: fit-content;
+    transform: unset;
+    left: unset;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    float: right;
+    list-style: none;
+    height: calc(2em + 35px);   
+}
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #888888;
+    text-align: center;
+    padding: 0;
+}
+.menu li {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.menu li:hover {
+    background-color: #EB6C27;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.menu-text{
+    display: none;
+}
+
+.header__text--another{
+    height: 20vh;
+}
+
+.header__heading--another{
+    display: none;
+}
+
+.header__heading{
+    font-size: 120px;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+}
+
+.header__subheading{
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.05em;
 }
