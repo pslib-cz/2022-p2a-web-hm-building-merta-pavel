@@ -8,6 +8,18 @@
     line-height: 82px;
 }
 
+.sluzba-container p{
+    margin: 0 20em;
+}
+
+.reference__info p{
+    margin: 0 20em;
+}
+
+.sluzby-section p{
+    margin-right: 20em;
+}
+
 .sluzby__text p{
     font-weight: 400;
     font-size: 16px;
@@ -125,16 +137,11 @@
 .reference__grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
 }
 
 .gallery__img{
     width: 450px;
     height: 270px;
-}
-
-.photo__grid--stairs{
-    grid-row-start: span 3;
 }
 
 .photo__grid{
@@ -183,4 +190,8 @@ footer p{
 .formular__content{
     padding-left: 5em;
     padding-top: 6em;
+}
+
+.center__button{
+    text-align: center;
 }
