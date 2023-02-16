@@ -1,5 +1,9 @@
-.header__text{
+.header__main{
     height: 28em;
+}
+
+.header__text{
+    margin-top: 20em;
 }
 
 .sluzby__photo{

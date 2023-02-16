@@ -93,20 +93,7 @@ a{
     right: 2em;
 }
 
-.navbar__menu::before{
 
-    content: "";
-    border-bottom: var(--main-color) solid 30px;
-    border-left: solid transparent 20px;
-    border-right: solid transparent 20px;
-    height: 0;
-    width: 0;
-    position: absolute;
-    right: 1%;
-    margin-top: -20px;
-    
-
-}
 
 .hamb{
     cursor: pointer;
@@ -159,19 +146,34 @@ a{
 
 
 .header__text{
-    font-family: "OpenSans";
+    color: white;
+    letter-spacing: -0.05em;
+    padding: 0;
+    margin: 0;
     text-align: center;
-    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../photos/pageheader-1920w.jpg);
-    background-blend-mode: normal, normal, hue, normal;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 35vh;
-    width: 100%;
+    font-family: "Open Sans";
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: white;
+    margin-top: 8em;
+}
+
+.header{
+    background-blend-mode: normal, normal, hue, normal;
+    height: 134px;
+    object-fit: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url("../photos/pageheader-1920w.jpg") no-repeat scroll center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.header__main{
+    height: 35vh;
+    bottom: 0;
 }
 
 .header__description{
@@ -408,8 +410,6 @@ footer{
     text-align: center;
 }
 
-.button__header{
-    background-color: #EB6C27;
-    color: white;
-    padding: 10px 30px;
+.button--header{
+    display: none;
 }
