@@ -1,5 +1,6 @@
 .header__main{
     height: 100vh;
+    min-height: 20vh;
 }
 
 .sluzba-container h1{
@@ -114,7 +115,7 @@
     top: 0px;
 }
 
-.presvedceni h2{
+.presvedceni p{
     padding-top: 5em;
     padding-left: 5em;
 }
@@ -282,7 +283,7 @@ footer p{
 
 .header__text{
     margin-bottom: 0;
-    margin-top: 15em;
+    margin-top: 25em;
 }
 
 .button--another{
