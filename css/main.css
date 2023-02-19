@@ -1,37 +1,12 @@
-@font-face {
-    font-family: "OpenSans";
-    font-style: normal;
-    src: url(../fonts/OpenSans-Regular.ttf);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
 }
 
-@font-face {
-    font-family: "Inter";
-    font-style: normal;
-    src: url(../fonts/Inter-Regular.ttf);
-}
-
-.html{
+html{
     scroll-behavior: smooth;
-}
-
-h1{
-    font-family: "OpenSans";
-}
-
-h2{
-    font-family: "OpenSans";
-}
-
-h3{
-    font-family: "OpenSans";
-}
-
-p{
-    font-family: "Inter";
-}
-
-li{
-    font-family: "Inter";
+    font-family: 'OpenSans', sans-serif;
 }
 
 strong{
@@ -204,6 +179,10 @@ a{
     padding: 0.5em;
 }
 
+.sluzby__text h2{
+    padding-bottom: 1.5em;
+}
+
 .sluzby__photo{
     width: 100%;    
     height: 8.5em;
@@ -256,7 +235,7 @@ a{
 
 .galerie__photo{
     width: 90%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
     padding-bottom: 0;
     padding-top: 2.5em;
