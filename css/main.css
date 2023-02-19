@@ -36,8 +36,8 @@ a{
     display: inline-block;
     color: white;
     font-size: 60px;
-    width: 50%;
-    height: 100%;
+    width: 100px;
+    height: 200px;
 }
 .navbar__menu {
     width: 90%;
