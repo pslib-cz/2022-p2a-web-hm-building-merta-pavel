@@ -328,3 +328,28 @@ footer p{
     font-size: 2em;
     text-align: center;
 }
+
+.sluzby-section li{
+    padding-left: 5em;
+}
+
+.button--header::after{
+    content: "";
+    background-image: url(../icons/arrow_back_24px.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 23px;
+    height: 13px;
+    margin-left: .5em;
+}
+
+.presvedceni p{
+    padding-top: 1em;
+    padding-left: 5em;
+    font-size: 1.5em;
+}
+
+.presvedceni p:first-child{
+    padding-top: 7em;
+}
