@@ -39,6 +39,7 @@ strong{
 }
 
 a{
+    font-family: "Inter";
     text-decoration: none;
     color: black;
 }
@@ -213,7 +214,6 @@ a{
 }
 
 .button{
-    font-family: "Inter";
     text-align: center;
     display: inline-block;
     font-size: 1.1em;
