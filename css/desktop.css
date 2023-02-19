@@ -4,12 +4,6 @@
     background-position: center;
 }
 
-.sluzba-container h1{
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 82px;
-}
-
 .sluzba-container p{
     margin: 0 20em;
 }
@@ -303,4 +297,34 @@ footer p{
 
 .header__main--another{
     height: 20vh;
+}
+
+.footer__text p:first-child{
+    font-size: 3em;
+    padding-bottom: 0.75em;
+}
+
+.reference__info p:first-child{
+    font-size: 3em;
+    margin: 0.6em 0 0 0;
+    padding-bottom: 1em
+}
+
+.reference_text h2{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.sluzba-container p:first-child{
+    font-size: 3em;
+    margin: 0.6em 0 0 0;
+}
+
+.sluzba-container p{
+    padding-bottom: 1em;
+}
+
+.sluzby-section p:first-child{
+    font-size: 2em;
+    text-align: center;
 }
