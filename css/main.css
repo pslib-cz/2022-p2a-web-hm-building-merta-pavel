@@ -262,11 +262,6 @@ a{
     color: white;
 }
 
-li::marker{
-    color: #EB6C27;
-    font-size: 1.5em;
-}
-
 footer{
     margin-top: 5em;
     padding: 2em 2em;
@@ -424,7 +419,7 @@ footer{
     padding-bottom: 1em;
 }
 
-.sluzby-section li::marker{
+ul li::marker{
     color: #EB6C27;
     font-size: 2em;
 }
