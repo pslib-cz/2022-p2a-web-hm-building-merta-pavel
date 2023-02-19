@@ -403,3 +403,7 @@ li{
     grid-template-columns: 1fr 1fr;
     gap: 3em;
 }
+
+.navbar__container li:hover{
+    text-decoration: none;
+}

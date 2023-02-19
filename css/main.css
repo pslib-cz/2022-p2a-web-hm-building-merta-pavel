@@ -36,8 +36,8 @@ a{
     display: inline-block;
     color: white;
     font-size: 60px;
-    width: 100px;
-    height: 200px;
+    width: 50px;
+    height: 100px;
 }
 .navbar__menu {
     width: 90%;
@@ -451,4 +451,17 @@ ul{
 
 li{
     padding-top: .5em;
+}
+
+.navbar__container li::marker{
+    color: #EB6C27;
+}
+
+.navbar__container li{
+    padding-top: 1em;
+}
+
+.navbar__container li:hover{
+    text-decoration: underline;
+    color: white;
 }
