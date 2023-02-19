@@ -61,6 +61,8 @@ a{
     display: inline-block;
     color: white;
     font-size: 60px;
+    width: 50%;
+    height: 100%;
 }
 .navbar__menu {
     width: 90%;
@@ -254,7 +256,7 @@ a{
 
 .galerie__photo{
     width: 90%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     padding-bottom: 0;
     padding-top: 2.5em;
