@@ -12,10 +12,6 @@
     margin: 0 20em;
 }
 
-.sluzby-section p{
-    margin-right: 20em;
-}
-
 .sluzby__text p{
     font-weight: 400;
     font-size: 16px;
@@ -325,10 +321,6 @@ footer p{
     text-align: center;
 }
 
-.sluzby-section li{
-    padding-left: 5em;
-}
-
 .button--header::after{
     content: "";
     background-image: url(../icons/arrow_back_24px.svg);
@@ -383,11 +375,25 @@ footer p{
     visibility: visible;
 }
 
-.reference_text p, h2{
+.reference_text p, .reference h2{
     color: white;
 }
 
 .galerie__photo{
     width: 90%;
     height: 80%;
+}
+
+.sluzby-section--underheading{
+    margin-right: 21em;
+}
+
+ul{
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em
+}
+
+li{
+    padding-top: .5em;
 }
