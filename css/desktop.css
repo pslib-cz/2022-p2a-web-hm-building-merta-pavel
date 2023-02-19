@@ -1,6 +1,7 @@
 .header__main{
     height: 100vh;
     min-height: 20vh;
+    background-position: center;
 }
 
 .sluzba-container h1{
@@ -195,60 +196,69 @@ footer p{
     text-align: center;
 }
 
-.hamb {
-    display: none;
-}
-.burger-menu {
-    display: none;
-}
-.navbar {
+.navbar{
     position: absolute;
     top: 30px;
-    width: 90%;
+    width: 80%;
     background-color: white;
     left: 50%;
     transform: translate(-50%);
+    margin-bottom: 0;
+ }
+
+ .hamb {
+    display: none;
 }
+
+.burger-menu {
+    display: none;
+}
+
 .navbar__menu {
     display: block;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
     z-index: 999;
     max-height: none;
     background-color: transparent;
     width: fit-content;
-    transform: unset;
     left: unset;
+    margin: 0;
 }
 
-.menu {
-    display: flex;
-    justify-content: flex-end;
-    width: fit-content;
-    float: right;
-    list-style: none;
-    height: calc(2em + 35px);   
-}
-.menu a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #888888;
-    text-align: center;
-    padding: 0;
-}
-.menu li {
+.navbar__menu li{
     display: flex;
     align-items: center;
     padding: 1em;
 }
 
-.menu li:hover {
-    background-color: #EB6C27;
+.navbar__menu li:hover{ 
+    background-color:  #EB6C27;
 }
 
-.menu a:hover {
+.navbar__menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3A3A3A;
+    text-align: center;
+    padding: 0;
+
+}
+
+.navbar__menu li a:hover{
     color: white;
+
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    float: right;
+    list-style: none;
+    height: 80px;   
 }
 
 .menu-text{
