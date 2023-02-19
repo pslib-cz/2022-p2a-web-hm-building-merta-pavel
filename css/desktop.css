@@ -56,10 +56,6 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.reference__photo{
-    width: 10%;
-}
-
 .button--center{
     text-align: center;
 }
@@ -352,4 +348,46 @@ footer p{
 
 .presvedceni p:first-child{
     padding-top: 7em;
+}
+
+.reference{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section--reference .reference__info, .center__button{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.reference-container{
+    position: relative;
+}
+
+.reference_text{
+    background: rgba(235, 108, 39, 0.9);
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    color: white;
+    top: 2.5em;
+    margin-left: 1.5em;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+    z-index: 420;
+}
+
+.reference-container:hover .reference_text{
+    visibility: visible;
+}
+
+.reference_text p, h2{
+    color: white;
+}
+
+.galerie__photo{
+    width: 90%;
+    height: 80%;
 }
